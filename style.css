@@ -177,8 +177,8 @@ header{
 	background: url(https://www.guerlain.com/sites/default/files/styles/desktop_homepage_slide/public/PARI20-350_Desktop%20homepage_2720x1116_UK.jpg?itok=RggdUzuZ);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: left;
+	background-size: contain;
+	background-position: center;
 }
 .img_bg:before{
 	content: '';
@@ -187,7 +187,7 @@ header{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #ff625a45;
+	background: #ff8f898c;
 }
 /*///////////////
 //
