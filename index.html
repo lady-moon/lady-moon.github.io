@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Abdrashov Zamanbek">
+
+	<!-- App Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<title>Lady Moon</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header">
+				<div class="header_title">
+					<strong>Lady Moon</strong>
+					<label class="burger" id="burger">
+						<input class="checker" type="checkbox" onclick="checkFluency()" id="checked">
+						<span class="burger__line burger__line_first"></span>
+						<span class="burger__line burger__line_second"></span>
+						<span class="burger__line burger__line_third"></span>
+						<span class="burger__line burger__line_fourth"></span>
+					</label>
+				</div>
+				<nav class="header_menu">
+					<ul>
+						<li>
+							<a href="#about">О нас</a>
+						</li>
+						<li>
+							<a href="#work">Режим работы</a>
+						</li>
+						<li>
+							<a href="#rew">Отзывы любимых клиентов</a>
+						</li>
+						<li>
+							<a href="#con">Контакты</a>
+						</li>
+						<li>
+							<a href="#maps">Наш Адрес</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="homeBackground">
+		<div class="container">
+			<div class="homeBackground_text">
+				<div class="h1_style">
+					<h1><span>Lady</span> Moon</h1>
+				</div>
+				<h2>Корейская косметика Шымкент</h2>
+				<div class="btn_shop">
+					<a href="https://www.instagram.com/lady.moon.shymkent/?hl=ru" target="_blank">Магазин</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="workBackground" id="about">
+		<div class="container">
+			<div class="title">
+				<h2>О нас</h2>
+			</div>
+			<div class="content">
+				<p>
+					В нашем магазине вы можете найти уходовый и декоративную косметику<br/>
+					Доверьте вашу красоту нашим экспертам<br/><br/>
+					Для заказа или консультации, пишите на <a href="https://wa.me/77753003595" class="link" target="_blank">whatsapp</a><br/>
+					Наш интернет-магазин <a href="https://www.instagram.com/lady.moon.shymkent/?hl=ru" target="_blank" class="link">instagram</a><br/><br/>
+					Наш адрес <a href="#maps" class="link">г.Шымкент</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="img_bg">
+	</div>
+	<div class="workBackground" id="work">
+		<div class="container">
+			<div class="title">
+				<h2>Режим работы</h2>
+			</div>
+			<div class="content">
+				<p>
+					Режим работы магазина<br/><br/>
+					Магазин работает с понедельника по пятницу с 10:00 до 18:00<br/>
+					В субботу и воскресенье выходной
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="workBackground" id="rew">
+		<div class="container">
+			<div class="title">
+				<h2 class="rew__title_height">Отзывы любимых клиентов</h2>
+			</div>
+			<div class="content">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/rew1.jfif" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/rew2.jfif" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/rew3.jfif" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/rew4.jfif" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/rew5.jfif" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/rew6.jfif" alt="">
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="workBackground" id="con">
+		<div class="container">
+			<div class="title">
+				<h2>Контакты</h2>
+			</div>
+			<div class="content">
+				<p>
+					Чтобы получить консультацию от косметолога с медицинским образованием свяжитесь с нами.
+				</p>
+				<ul class="contact_block">
+					<li>
+						<i class="fas fa-phone"></i><a href="tel:+7 775 300 3595" target="_blank" class="link">+7 775 300 3595</a>
+					</li>
+					<li>
+						<i class="fab fa-whatsapp"></i><a href="https://wa.me/77753003595" target="_blank" class="link">Whatsapp</a>
+					</li>
+					<li>
+						<i class="fab fa-instagram"></i><a href="https://www.instagram.com/lady.moon.shymkent/?hl=ru" target="_blank"  class="link">Instagram</a>
+					</li>
+				</ul>
+					
+					
+				
+			</div>
+		</div>
+	</div>
+	<div class="workBackground" id="maps">
+		<div class="container">
+			<div class="title">
+				<h2>Наш Адрес</h2>
+			</div>
+			<div class="content address">
+				<div class="ad_maps" style="position:relative;overflow:hidden;">
+					<a class="dg-widget-link" href="http://2gis.kz/shymkent/firm/70000001034910971/center/69.592016,42.319402/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Шымкента</a><div class="dg-widget-link"><a href="http://2gis.kz/shymkent/center/69.592016,42.319402/zoom/16/routeTab/rsType/bus/to/69.592016,42.319402╎Акерке, магазин женской одежды и обуви?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Акерке, магазин женской одежды и обуви</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":42.319402,"lon":69.592016,"zoom":16},"opt":{"city":"shymkent"},"org":[{"id":"70000001034910971"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+				</div>
+				<div class="address_content">
+					<p>Шымкент, просп. Тауке хана 8 магазин Акерке</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<p>&copy;Shymkent 2020</p>
+				<p>Made with <img alt="❤️" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/2764.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"> by Abdrashov Zamanbek</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- App JavaScript -->
+	<script src="main.js"></script>
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	 <!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 'auto',
+		spaceBetween: 10,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		});
+	</script>
+	
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(66938593, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/66938593" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171719888-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-171719888-4');
+	</script>
+
+</body>
+</html>

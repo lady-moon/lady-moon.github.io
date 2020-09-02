@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+    --swiper-theme-color: #ffbebe !important;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+h1{
+	font-family: 'Meie Script', cursive;
+	font-size: 10em;
+}
+h2{
+	font-size: 5em;
+	font-family: 'Bad Script', cursive;
+}
+body{
+	font-size: 10px;
+	background: #fff1f1;
+}
+.link{
+	color: #ef5555;
+}
+.container{
+	position: relative;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+	height: 100%;
+}
+/*///////////////
+//
+//     HEADER ONE
+//
+///////////////*/
+header{
+	position: fixed;
+	width: 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	z-index: 999;
+	min-height: 20px;
+	transition: 1s min-height ease, .4s background ease;
+}
+.header_title{
+	text-align: center;
+}
+.header_title strong{
+	font-size: 5em;
+	font-weight: 300;
+}
+/*///////////////
+//
+//     HEADER TWO
+//
+///////////////*/
+.header_menu ul{
+	font-size: 2.6em;
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_menu li,
+.header_menu a{
+	position: relative;
+}
+.header_menu li{
+	padding: 15px 0;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+.header_menu a{
+	color: #000;
+	z-index: 1;
+}
+
+.header_menu li:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 4px;
+	transition: .5s width ease,  .5s border-radius ease, .5s background ease;
+	border-radius: 0 100% 100% 0;
+	background: #000;
+}
+.header_menu li:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0;
+	height: 4px;
+	transition: .5s width ease,  .5s border-radius ease, .5s background ease;
+	border-radius: 100% 0 0 100%;
+	background: #000;
+}
+.header_scroll_menu:before,
+.header_scroll_menu:after{
+	content: '';
+	background: #fff !important;
+}
+.header_menu li:hover:before,
+.header_menu li:hover:after{
+	width: 50%;
+	border-radius: 0;
+}
+/*///////////////
+//
+//     BACKGROUD IMAGES
+//
+///////////////*/
+.homeBackground{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.homeBackground:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #fff1f1, #ffb1b1, #ffb1b1);
+}
+/*///////////////
+//
+//     BACKGROUD TEXT
+//
+///////////////*/
+.homeBackground_text{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+	padding: 20px;
+}
+.btn_shop{
+	display: flex;
+	justify-content: center;
+}
+.btn_shop a{
+	font-family: 'Meie Script', cursive;
+	padding: 5px 25px;
+	color: #000;
+	border-bottom: 2px solid #000;
+	font-size: 4em;
+	transition: .3s transform ease-out, .3s color ease;
+}
+.btn_shop a:hover{
+	transform: scale(1.03);
+	color: #333;
+}
+/*///////////////
+//
+//     Картинка парфюм
+//
+///////////////*/
+.img_bg{
+	position: relative;
+	margin-top: 30px;
+	height: 180px;
+	width: 100%;
+	background: url(https://www.guerlain.com/sites/default/files/styles/desktop_homepage_slide/public/PARI20-350_Desktop%20homepage_2720x1116_UK.jpg?itok=RggdUzuZ);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+}
+.img_bg:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff625a45;
+}
+/*///////////////
+//
+//     НАЗВАНИЕ БЛОКА
+//
+///////////////*/
+.title{
+	position: relative;
+	text-align: center;
+	padding: 20px 0 10px;
+	margin-bottom: 20px;
+}
+.title h2:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 150px;
+	height: 6px;
+    background: linear-gradient(to left, #ff000038, #ff6a0078);
+}
+/*///////////////
+//
+//     БЛОК РЕЖИМ
+//
+///////////////*/
+.rew__title_height{
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.workBackground{
+	position: relative;
+	width: 100%;
+}
+.content{
+	font-family: 'Open Sans Condensed', sans-serif;
+	min-height: 150px;
+	width: 100%;
+	font-size: 2.6em;
+}
+/*///////////////
+//
+//     ADDRESS адрес
+//
+///////////////*/
+.address{ 
+	display: flex;
+	padding-bottom: 40px;
+}
+.address_content{
+	padding: 20px;
+}
+/*///////////////
+//
+//     BURGER MENU BUTTON
+//
+///////////////*/
+.burger{
+	width: 35px;
+	height: 24px;
+	position: relative;
+	cursor: pointer;
+	display: none;
+}
+.burger__line{
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: #000;
+	position: absolute;
+	transition: .3s all linear;
+}
+.checker{
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	display: none;
+}
+.burger__line_second, .burger__line_third{
+	top: 10px;
+	left: 10px;
+}
+.burger__line_fourth{
+	bottom: 0;
+}
+.checker:checked ~ .burger__line_first, .checker:checked ~ .burger__line_fourth{
+	opacity: 0;
+}
+.checker:checked ~ .burger__line_second{
+	transform: rotate(45deg);
+}
+.checker:checked ~ .burger__line_third{
+	transform: rotate(-225deg);
+}
+/*///////////////
+//
+//     SLIDER отзывы
+//
+///////////////*/
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 280px !important;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+/*///////////////
+//
+//     CONTACT
+//
+///////////////*/
+.contact_block>li i{
+	display: inline-block;
+	margin-right: 15px;
+	color: #2f2f2f;
+}
+.contact_block>li a{
+	color: #ff3333;
+	font-size: 1.2em;
+}
+.contact_block>li:hover a{
+	color: #000;
+}
+/*///////////////
+//
+//     FOOTER
+//
+///////////////*/
+footer{
+	background: #333;
+	color: #fff;
+}
+.footer{
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 20px 0;
+	font-size: 2em;
+	display: flex;
+}
+.footer p:first-child{
+	margin-right: 20px;
+}
+/*///////////////
+//
+//     MEDIA
+//
+///////////////*/
+@media screen and (max-width: 768px){
+	.ad_maps{
+		margin: 0 auto;
+	}
+	.address{
+		flex-wrap: wrap;
+	}
+	.address_content{
+		padding: 20px 0;
+	}
+	.header_menu li:before,
+	.header_menu li:after{
+		display: none;
+	}
+	.h1_style{
+		position: relative;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.homeBackground_text{
+		padding: 0 5px;
+	}
+	.homeBackground_text h1{
+		text-transform: uppercase;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 300;
+	}
+	.homeBackground_text span{
+		position: absolute;
+		top: -10px;
+		left: 14px;
+		font-size: 2rem;
+	}
+	.homeBackground_text h2, .btn_shop a{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 300;
+	}
+	.header_title{ 
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.burger{
+		display: block;
+	}
+	header{
+		overflow: hidden;
+	}
+	.header_menu{
+		position: absolute;
+		top: -100vh;
+		transition: 1s top ease;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.header_menu ul{
+		display: block;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 425px){
+	h2{
+		font-size: 4.2em;
+	}
+	.btn_shop a{
+		padding: 1px 15px 5px;
+		font-size: 3.5em;
+	}
+	.h1_style{
+		width: 280px;
+	}
+	h1{
+		font-size: 8em;
+	}
+	.homeBackground_text span{
+		left: 22px;	
+	}
+
+}
+@media screen and (max-width: 417px){
+	.homeBackground_text h2{
+		font-size: 3em;
+	}
+	.homeBackground_text span:before{
+		display: none;
+	}
+}
+@media screen and (max-width: 325px){
+	h2{
+		font-size: 3.8em;
+		font-family: 'Bad Script', cursive;
+	}
+}
