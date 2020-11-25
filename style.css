@@ -16,16 +16,19 @@ li{
 	list-style: none;
 }
 h1{
-	font-family: 'Meie Script', cursive;
 	font-size: 10em;
 }
 h2{
 	font-size: 5em;
+	font-weight: 300;
 	font-family: 'Bad Script', cursive;
 }
 body{
 	font-size: 10px;
 	background: #fff1f1;
+}
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 .link{
 	color: #ef5555;
@@ -45,7 +48,6 @@ body{
 header{
 	position: fixed;
 	width: 100%;
-	font-family: 'Open Sans Condensed', sans-serif;
 	z-index: 999;
 	min-height: 20px;
 	transition: 1s min-height ease, .4s background ease;
@@ -148,12 +150,34 @@ header{
 	transform: translateY(-50%);
 	padding: 20px;
 }
+.h1_style{
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+}
+.homeBackground_text{
+	padding: 0 5px;
+}
+.homeBackground_text h1{
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
+.homeBackground_text span{
+	position: absolute;
+	top: -10px;
+	left: 14px;
+	font-size: 2rem;
+}
+.homeBackground_text h2, .btn_shop a{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
 .btn_shop{
 	display: flex;
 	justify-content: center;
 }
 .btn_shop a{
-	font-family: 'Meie Script', cursive;
 	padding: 5px 25px;
 	color: #000;
 	border-bottom: 2px solid #000;
@@ -224,7 +248,6 @@ header{
 	width: 100%;
 }
 .content{
-	font-family: 'Open Sans Condensed', sans-serif;
 	min-height: 150px;
 	width: 100%;
 	font-size: 2.6em;
@@ -343,7 +366,6 @@ footer{
 	color: #fff;
 }
 .footer{
-	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 20px 0;
 	font-size: 2em;
 	display: flex;
@@ -369,29 +391,6 @@ footer{
 	.header_menu li:before,
 	.header_menu li:after{
 		display: none;
-	}
-	.h1_style{
-		position: relative;
-		width: 320px;
-		margin: 0 auto;
-	}
-	.homeBackground_text{
-		padding: 0 5px;
-	}
-	.homeBackground_text h1{
-		text-transform: uppercase;
-		font-family: 'Quicksand', sans-serif;
-		font-weight: 300;
-	}
-	.homeBackground_text span{
-		position: absolute;
-		top: -10px;
-		left: 14px;
-		font-size: 2rem;
-	}
-	.homeBackground_text h2, .btn_shop a{
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-weight: 300;
 	}
 	.header_title{ 
 		display: flex;
@@ -446,6 +445,5 @@ footer{
 @media screen and (max-width: 325px){
 	h2{
 		font-size: 3.8em;
-		font-family: 'Bad Script', cursive;
 	}
 }
