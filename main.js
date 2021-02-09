@@ -5,7 +5,7 @@ window.onscroll = function showHeader() {
 	const headerUl = document.querySelector('.header_menu ul');
 	const burger = document.querySelectorAll('.burger__line');
 
-	if(window.pageYOffset > 150 && document.documentElement.clientWidth > 767){
+	if(window.pageYOffset > 20 && document.documentElement.clientWidth > 767){
 		headerUl.style.fontSize = "2em";
 		for(let i = 0; i < headerLi.length; i++){
 			headerLi[i].style.padding = "0 0 5px";
@@ -23,7 +23,7 @@ window.onscroll = function showHeader() {
 			headerLi[i].classList.remove('header_scroll_menu');
 		}
 	}
-	if(window.pageYOffset > 150){
+	if(window.pageYOffset > 20){
 		header.style.background = "#000000a6";
 		header.style.color = "#fff";
 		for(let i = 0; i < headerA.length; i++){
